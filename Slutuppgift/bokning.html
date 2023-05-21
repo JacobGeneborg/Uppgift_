@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Bokning</title>
+	<script
+  src="https://kit.fontawesome.com/7a6afc2556.js"
+  crossorigin="anonymous"></script>
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet">  
+	<link rel="shortcut icon" href="gokart_icon1.png" type="image/x-icon">
+<link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+
+	<div id="navbar">
+		<a href="slutupgift.html">Start</a>
+		<a href="bokning.html">Bokning</a>
+		<a href="Q&A.html">Q&A</a>
+		<a href="javascript:void(0);" onclick="toggleMenu()">
+			<i class="fa-solid fa-bars fa-beat" id="icon"></i>
+		</a>
+	  </div>
+
+	<main>
+		<h1>Bokning</h1>
+		<form action="/action_page.php">
+			<input type="text" id="namne" placeholder="Namne"><br><br>
+			<input type="email" id="e-post" placeholder="e-post"><br><br>
+			<input type="datetime-local" id="datum" placeholder="Datum"><br><br>
+			<input type="number" id="number" placeholder="Antal personer"><br><br>
+			<button onclick="n();e();d();nu()" type="button" id="submitbutton">Submit</button>
+		</form>
+	</main>
+
+	<section class="flex-container">
+		<div class="flex-item text1" id="outputNamne"></div>
+		<div class="flex-item text1" id="outpute"></div>
+		<div class="flex-item text1" id="outputd"></div>
+		<div class="flex-item text1" id="outputnu"></div>
+	</section>
+
+	<div class="flex-container">
+		<div class="image-box">
+		  <img src="gokarts_3.jpg" alt="gokarts_3">
+		</div>
+		<div class="image-box">
+		  <img src="go-kart-donuts.gif" alt="gokart gif">
+		</div>
+	  </div>
+	  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
